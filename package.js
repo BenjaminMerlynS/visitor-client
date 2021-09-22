@@ -1,14 +1,14 @@
 Package.describe({
-	name: 'useful:visitor-client',
-	version: '0.0.2',
+	name: 'merlyn:visitor-client',
+	version: '0.0.5',
 	summary: 'Client-side infrastructure for tracking visitors to your site.',
-	git: 'https://github.com/usefulio/visitor-client/',
+	git: 'https://github.com/BenjaminMerlynS/visitor-client/',
 	documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
 
-	api.versionsFrom('1.1');
+	api.versionsFrom('2.4');
 
 	// ====== BUILT-IN PACKAGES =======
 
@@ -18,7 +18,7 @@ Package.onUse(function(api) {
 		, 'random'
 		, 'accounts-base'
 		, 'mongo'
-		, 'templating'
+		, 'templating@1.4.1'
 		, 'underscore'
 	], 'client');
 
